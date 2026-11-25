@@ -49,8 +49,8 @@ def draw_step(current, idx, sym=None):
             dx   = 0.08                           # menos ancho de arco
             offy = 0.22 if j % 2 == 0 else -0.22  # etiqueta más cerca
 
-            loop = FancyArrowPatch((x - dx, y), (x + dx, y),
-                connectionstyle=f"arc3,rad={rad}",
+            loop = FancyArrowPatch((x - dx, y), (x + dx, y),# cre objetos de flecha
+                connectionstyle=f"arc3,rad={rad}",#convierte la flecha en un marco curvo
                 arrowstyle='-|>', mutation_scale=18, linewidth=1.2,
                 shrinkA=6, shrinkB=6, zorder=5, clip_on=False)
             plt.gca().add_patch(loop)
