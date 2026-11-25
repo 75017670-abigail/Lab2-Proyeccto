@@ -15,7 +15,7 @@ delta = {("q0","a"):"q1",
 
 q0, F = "q0", {"q4"}
 
-# === Simulación ===
+# === Simulación  del codigo===
 def run(s):
     q, steps = q0, [q0]
     for i,ch in enumerate(s):
@@ -62,7 +62,7 @@ def draw_step(current, idx, sym=None):
     plt.axis('off'); plt.title(f"Paso {idx}: {current}" + (f" | '{sym}'" if sym else "")); plt.pause(1.0)
 
 # === main ===
-# ===menu===s
+# ===menusito===s 
 if __name__=='__main__':
     s = sys.argv[1] if len(sys.argv)>1 else input("Cadena (a/b): ").strip()
     try:
